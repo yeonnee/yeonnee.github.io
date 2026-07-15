@@ -187,9 +187,15 @@ body:hover .visually-hidden button {
   vertical-align: middle;
 }
 
-/* square variant, for square-viewBox custom SVGs (e.g. images/google-scholar.svg) so height isn't stretched */
-.icon--square {
+i.google-scholar-icon {
+  display: inline-block;
+  width: 1em;
   height: 1em;
+  background-image: url("/images/google-scholar.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: -0.125em;
 }
 
 /* Adjust this setting to control the space between an icon and text in the sidebar */
