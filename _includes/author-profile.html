@@ -27,14 +27,17 @@
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
+      {% if author.email %}
+        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
+      {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
+        <li class="author__desktop"><i class="fa-fw icon-pad-right sejong-logo-icon" aria-hidden="true"></i>{{ author.employer }}</li>
+      {% endif %}
+      {% if author.googlescholar %}
+        <li><a href="{{ author.googlescholar }}"><i class="ai-fw icon-pad-right google-scholar-icon" aria-hidden="true"></i>Google Scholar</a></li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
-      {% endif %}
-      {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
       {% endif %}
 
       <!-- Font Awesome and Academicons icons / Academic websites -->
@@ -44,9 +47,7 @@
       {% if author.linkedin %}
         <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
       {% endif %}
-      {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai-fw icon-pad-right google-scholar-icon" aria-hidden="true"></i>Google Scholar</a></li>
-      {% endif %}
+      
       {% if author.academia %}
         <li><a href="{{ author.academia }}"><i class="ai ai-academia ai-fw icon-pad-right" aria-hidden="true"></i>Academia</a></li>
       {% endif %}

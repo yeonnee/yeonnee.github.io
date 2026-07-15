@@ -27,9 +27,9 @@ author:
   name             : "원주연 (Juyeon Weon)"
   pronouns         : # example: "she/her"  
   bio              : "AI Researcher & Software Engineer"
-  # location         : "Seoul, South Korea"
-  # employer         : "Sejong University"
-  uri              : https://aisl.sejong.ac.kr
+  # location         : "Seoul"
+  employer         : "Sejong University, South Korea"
+  uri              : # URL
   email            : "juyeon.sejong@gmail.com" 
 
   # Academic websites
