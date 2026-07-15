@@ -24,12 +24,12 @@ repository               : "yeonnee/yeonnee.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "원주연(Juyeon Weon)"
+  name             : "원주연 (Juyeon Weon)"
   pronouns         : # example: "she/her"  
   bio              : "AI Researcher & Software Engineer"
-  location         : "Seoul, South Korea"
-  employer         : "Sejong University"
-  uri              : # URL
+  # location         : "Seoul, South Korea"
+  # employer         : "Sejong University"
+  uri              : https://aisl.sejong.ac.kr
   email            : "juyeon.sejong@gmail.com" 
 
   # Academic websites
